@@ -24,6 +24,13 @@
 
 # print(f"學生等級:{grade}")
 
+
+
+#輸入顧客購買金額，若金額在
+#100000元打8折. 
+#50000打85折. 
+#30000打9折. 
+#10000打95折.
 # money = int(input("請輸入購買金額:"))
 # payMoney = 0
 # if(money >= 100000):
@@ -38,17 +45,39 @@
 #     payMoney = money 
 # print(f"實付金額:{int(payMoney)}") #int 是轉成整數
 
-money = int(input("請輸入購買金額:"))
-payMoney = 0
-if(money < 10000):
-    payMoney = money 
-elif(money < 30000):
-    payMoney = money * 0.95
-elif(money < 50000):
-    payMoney = money * 0.9
-elif(money < 100000):
-    payMoney = money * 0.85
+
+# money = int(input("請輸入購買金額:"))
+# payMoney = 0
+# if(money < 10000):
+#     payMoney = money 
+# elif(money < 30000):
+#     payMoney = money * 0.95
+# elif(money < 50000):
+#     payMoney = money * 0.9
+# elif(money < 100000):
+#     payMoney = money * 0.85
+# else:
+#     payMoney = money * 0.8
+
+# print(f"實付金額:{int(payMoney)}") 
+
+
+
+
+#限制級：18歲或以上皆可欣賞。
+#輔導級：13(含) ~ 17歲以上皆可欣賞。
+#普遍級：12(含)歲以下皆可欣賞。
+#如果沒有輸入年齡預設為普遍級。
+age = int(input("請輸入年紀 :"))
+rating = ""
+
+if age == "":
+    rating = "普遍級"
+elif age >=13:
+    rating = "輔導級"
+elif age >= 18 :
+    rating = "限制級"
 else:
-    payMoney = money * 0.8
-     
-print(f"實付金額:{int(payMoney)}") 
+    rating = "普遍級"
+
+print(rating)
