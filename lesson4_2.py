@@ -11,16 +11,13 @@ score = int(input("請輸入學生分數:"))
 
 if score >= 90:
     grade = "優"
+elif score >= 80:
+    grade = "甲"
+elif score >= 70:
+    grade = "乙"
+elif score >= 60:
+    grade = "丙"
 else:
-    if score >= 80:
-        grade = "甲"
-    else:
-        if score >= 70:
-            grade = "乙"
-        else:
-            if score >= 60:
-                grade = "丙"
-            else:
-                grade = "丁"
-                
+    grade = "丁"
+
 print(f"學生等級:{grade}")
