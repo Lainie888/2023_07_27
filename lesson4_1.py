@@ -1,4 +1,4 @@
-try:
+try: #有可能raise 的程式碼出錯
     score = int(input("請輸入學生分數(最高分300分):"))
     if score <=300:
         is_add = input("學生是否符合加分條件?(y,n)")
@@ -12,7 +12,7 @@ try:
 
     else:
         print("學生分數不可大於300分")
-except:
+except: #出錯後的程式碼執行
     print("格式錯誤")
 
 
