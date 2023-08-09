@@ -67,20 +67,21 @@
 #限制級：18歲或以上皆可欣賞。
 #輔導級：13(含) ~ 17歲以上皆可欣賞。
 #普遍級：12(含)歲以下皆可欣賞。
-#如果沒有輸入年齡預設為普遍級。==>因為有定義空字串，會預設為普遍級
+#如果沒有輸入年齡預設為普遍級。====>因為有定義空字串，會預設為普遍級
 age = input("請輸入年紀 :")
 rating = ""
 
 if age == "":
     rating = "普遍級"
-elif int(age) >=13:
-    rating = "輔導級"
 elif int(age) >= 18 :
     rating = "限制級"
+elif int(age) >=13:
+    rating = "輔導級"
 else:
     rating = "普遍級"
 
 print(rating)
+
 
 # add = input("請問是否加分:(y,n)")
 # if not (add == 'n'):
