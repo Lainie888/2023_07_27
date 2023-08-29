@@ -8,7 +8,7 @@ def allNames():
 
 print("===========取名字系統=========\n\n")
 
-while(True):
+while True:
     names_list = allNames()
     first_name = input("請輸入你的姓:")
     count = int(input("請輸入你要的筆數:"))
