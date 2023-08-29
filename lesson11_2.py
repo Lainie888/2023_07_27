@@ -6,7 +6,6 @@ def get_score() -> list:  #隨機跑5個分數
     return score
 
 def get_names(nums:int) -> list:
-    #取得nums_int個姓名
     with open("names.txt",encoding="utf-8",newline="") as file:
         names_str = file.read()
         all_names_list = names_str.split(sep="\n")
