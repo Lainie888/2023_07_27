@@ -1,3 +1,8 @@
+#student module
+#提供變數，mocule提供的常數
+#提供class
+#提供fuction
+
 class Student:
     def  __init__(self,name:str,chinese:int,english:int,math:int):
         self.name = name
@@ -16,3 +21,10 @@ class Student:
 
     def __repr__(self):
         return f"我是student實體，我的name:{self.name}"
+
+import random
+def get_student(n:str)->Student:
+    ch = random.randint(50,100)
+    en = random.randint(50,100)
+    ma = random.randint(50,100)
+    return Student(name=n, chinese=ch, english=en, math=ma)
