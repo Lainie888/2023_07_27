@@ -1,6 +1,9 @@
 import student
 
-stu1 = student.Student("Lainie", 90 , 92, 80)
+stu1 = student.get_student("Lainie")
 print(stu1.total())
-print(stu1.name)
+print(stu1.chinese)
+print(stu1.math)
+print(stu1.total())
+print(stu1.average)
 print(stu1)
